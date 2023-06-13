@@ -12,7 +12,14 @@ public:
                    stringTorepeat+=st.top() == "[" ? "" : st.top();
                    st.pop();
                }
-                string times = "";
+                 //or we can use this
+                 //    while(!st.empty() and st.top()!="[")
+                 //    {
+                 //        stringTorepeat+=st.top();
+                 //        st.pop();
+                 //    }
+                 //     st.pop();
+               string times = "";
                while(!st.empty() and isdigit(st.top()[0]))
                {
                    times+=st.top();
